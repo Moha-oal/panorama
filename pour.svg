@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="16 56 544 472" role="img" aria-hidden="true">
+  <style>
+    .ln,.sh,.solid,.solid-c{stroke:#2A1B14;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+    .ln{fill:none}
+    .sh{fill:#F6F4EE}
+    .solid,.solid-c{fill:#2A1B14}
+    .stream{fill:#2A1B14;stroke:none}
+  </style>
+  <path class="ln" d="M24 502 H536"/>
+  <path class="ln" d="M128 512 h16"/>
+  <path class="ln" d="M156 512 h16"/>
+  <path class="ln" d="M184 512 h16"/>
+  <path class="ln" d="M212 512 h16"/>
+  <path class="ln" d="M240 512 h16"/>
+  <path class="ln" d="M268 512 h16"/>
+  <path class="ln" d="M296 512 h16"/>
+  <path class="ln" d="M324 512 h16"/>
+  <path class="ln" d="M126 300 C118 288 132 280 124 268 C118 258 128 252 124 244"/>
+  <path class="ln" d="M272 300 C264 288 278 280 270 268 C264 258 274 252 270 244"/>
+  <path class="sh" d="M148 382 L148 466 Q148 484 168 484 L232 484 Q252 484 252 466 L252 382 Z"/>
+  <path class="ln" d="M144 382 H256"/>
+  <path class="solid" d="M152 430 L152 466 Q152 480 168 480 L232 480 Q248 480 248 466 L248 430 Z"/>
+  <path class="ln" d="M160 396 h22"/>
+  <path class="ln" d="M218 396 h22"/>
+  <path class="ln" d="M160 406 h22"/>
+  <path class="ln" d="M218 406 h22"/>
+  <path class="ln" d="M160 416 h22"/>
+  <path class="ln" d="M218 416 h22"/>
+  <path class="stream" d="M197 194 L203 194 L206 318 L194 318 Z"/>
+  <path class="sh" d="M122 320 L164 382 L236 382 L278 320 Z"/>
+  <path class="sh" d="M114 304 h172 v15 h-172 Z"/>
+  <path class="ln" d="M137.6 322 L171.2 380"/>
+  <path class="ln" d="M153.2 322 L178.4 380"/>
+  <path class="ln" d="M168.8 322 L185.6 380"/>
+  <path class="ln" d="M184.4 322 L192.8 380"/>
+  <path class="ln" d="M200.0 322 L200.0 380"/>
+  <path class="ln" d="M215.6 322 L207.2 380"/>
+  <path class="ln" d="M231.2 322 L214.4 380"/>
+  <path class="ln" d="M246.8 322 L221.6 380"/>
+  <path class="ln" d="M262.4 322 L228.8 380"/>
+  <path class="sh" d="M344 116 C404 110 440 136 438 160 C436 190 404 210 350 206 L352 196 C398 198 428 180 428 160 C430 138 400 122 346 126 Z"/>
+  <path class="sh" d="M242 130 C214 116 188 122 184 150 C181 170 186 186 192 202 L206 200 C200 184 195 170 198 152 C202 136 220 130 242 144 Z"/>
+  <path class="sh" d="M266 104 H344 Q358 104 360 118 L372 194 Q374 214 354 214 H256 Q236 214 238 194 L250 118 Q252 104 266 104 Z"/>
+  <path class="ln" d="M246 128 H364"/>
+  <path class="ln" d="M250 142 V190"/>
+  <path class="ln" d="M257 142 V190"/>
+  <path class="ln" d="M264 142 V190"/>
+  <path class="ln" d="M271 142 V190"/>
+  <path class="ln" d="M278 142 V190"/>
+  <path class="ln" d="M285 142 V190"/>
+  <path class="ln" d="M326 142 V190"/>
+  <path class="ln" d="M333 142 V190"/>
+  <path class="ln" d="M340 142 V190"/>
+  <path class="ln" d="M347 142 V190"/>
+  <path class="ln" d="M354 142 V190"/>
+  <path class="ln" d="M361 142 V190"/>
+  <path class="solid" d="M290 146 h32 v22 h-32 Z"/>
+  <circle class="solid-c" cx="306" cy="182" r="4.5"/>
+  <path class="sh" d="M272 104 L280 84 H332 L340 104 Z"/>
+  <circle class="sh" cx="306" cy="76" r="8"/>
+  <g transform="translate(8,0)">
+    <path class="sh" d="M414 128 C428 120 442 117 453 116 C458 109 469 108 474 116 C480 108 490 108 495 117 C501 110 511 113 516 125 L566 103 L566 181 L512 174 C500 188 484 198 468 204 C454 210 438 212 426 209 C418 206 414 203 412 199 C403 194 401 187 407 182 C399 177 398 168 405 163 C397 158 397 147 404 142 C402 136 406 130 414 128 Z"/>
+    <path class="ln" d="M407 182 C420 179 434 178 446 180"/>
+    <path class="ln" d="M405 163 C418 160 432 159 446 161"/>
+    <path class="ln" d="M404 142 C417 139 431 138 444 141"/>
+    <path class="ln" d="M448 128 C462 133 478 136 494 137"/>
+    <path class="ln" d="M460 148 C474 155 488 160 502 163"/>
+    <path class="ln" d="M517 130 C512 146 511 160 513 172"/>
+    <path class="sh" d="M476 115 C458 116 438 126 428 140 C420 151 424 163 435 162 C445 161 450 150 460 142 C470 134 483 133 489 129 C494 124 486 113 476 115 Z"/>
+    <path class="ln" d="M452 133 C456 140 456 148 451 153"/>
+    <path class="ln" d="M427 149 C433 147 438 152 436 159"/>
+    <path class="sh" d="M530 109 L566 100 L566 184 L532 176 Z"/>
+    <path class="ln" d="M540 106 L542 179"/>
+    <path class="ln" d="M548 104 L550 181"/>
+    <path class="ln" d="M556 102 L558 183"/>
+  </g>
+</svg>
