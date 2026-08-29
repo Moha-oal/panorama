@@ -142,10 +142,10 @@
   <script>
     (function () {
       var MENU = [
-        { id: 'v60', name: 'V60', nameAr: 'في ٦٠', price: 20 },
-        { id: 'spanish-latte', name: 'Spanish Latte', nameAr: 'لاتيه إسباني', price: 22 },
-        { id: 'espresso', name: 'Espresso', nameAr: 'إسبريسو', price: 15 },
-        { id: 'tiramisu', name: 'Tiramisu', nameAr: 'تيراميسو', price: 25 }
+        { id: 'v60', name: 'V60', nameAr: 'في ٦٠', price: 20, image: 'https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?q=80&w=400&auto=format&fit=crop' },
+        { id: 'spanish-latte', name: 'Spanish Latte', nameAr: 'لاتيه إسباني', price: 22, image: 'https://images.unsplash.com/photo-1579992357154-faf4bde95b3d?q=80&w=400&auto=format&fit=crop' },
+        { id: 'espresso', name: 'Espresso', nameAr: 'إسبريسو', price: 15, image: 'https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?q=80&w=400&auto=format&fit=crop' },
+        { id: 'tiramisu', name: 'Tiramisu', nameAr: 'تيراميسو', price: 25, image: 'https://images.unsplash.com/photo-1571115177098-24ec42ed204d?q=80&w=400&auto=format&fit=crop' }
       ];
 
       var cart = {};
@@ -316,12 +316,21 @@
 
         MENU.forEach(function (item) {
           var li = document.createElement('li');
-          li.className = 'py-7 first:pt-0 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4';
+          li.className = 'py-7 first:pt-0 flex items-center gap-4 sm:gap-5';
+
+          var img = document.createElement('img');
+          img.src = item.image;
+          img.alt = item.name;
+          img.width = 80;
+          img.height = 80;
+          img.loading = 'lazy';
+          img.className = 'w-16 h-16 sm:w-20 sm:h-20 rounded-md object-cover shrink-0';
 
           var copy = document.createElement('div');
+          copy.className = 'min-w-0 flex-1';
 
           var name = document.createElement('h3');
-          name.className = 'font-serif text-[1.65rem] leading-tight tracking-[-0.015em]';
+          name.className = 'font-serif text-[1.45rem] sm:text-[1.65rem] leading-tight tracking-[-0.015em]';
           name.textContent = item.name;
 
           var nameAr = document.createElement('p');
@@ -331,18 +340,18 @@
           nameAr.textContent = item.nameAr;
 
           var price = document.createElement('p');
-          price.className = 'font-sans text-[13px] tracking-[0.08em] mt-3 text-espresso/70';
+          price.className = 'font-sans text-[13px] tracking-[0.08em] mt-2 text-espresso/70';
           price.textContent = item.price + ' SAR';
 
           copy.append(name, nameAr, price);
 
           var addBtn = document.createElement('button');
           addBtn.type = 'button';
-          addBtn.className = 'self-start shrink-0 whitespace-nowrap border border-espresso/25 px-4 py-2.5 font-sans text-[10px] font-medium uppercase tracking-[0.22em] hover:border-espresso hover:bg-espresso hover:text-cream transition-colors duration-300';
+          addBtn.className = 'self-center shrink-0 whitespace-nowrap border border-espresso/25 px-3 sm:px-4 py-2.5 font-sans text-[10px] font-medium uppercase tracking-[0.18em] sm:tracking-[0.22em] hover:border-espresso hover:bg-espresso hover:text-cream transition-colors duration-300';
           addBtn.textContent = 'Add to Cart';
           addBtn.addEventListener('click', function () { addToCart(item.id); });
 
-          li.append(copy, addBtn);
+          li.append(img, copy, addBtn);
           menuList.appendChild(li);
         });
       }
