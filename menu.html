@@ -216,7 +216,7 @@
   <script>
     (function () {
       var MENU = [
-        { id: 'v60', name: 'V60', nameAr: 'في ٦٠', price: 20, image: 'https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?q=80&w=400&auto=format&fit=crop' },
+        { id: 'v60', name: 'V60', nameAr: 'في ٦٠', price: 20, image: 'images/v60.jpg' },
         { id: 'spanish-latte', name: 'Spanish Latte', nameAr: 'لاتيه إسباني', price: 22, image: 'https://images.unsplash.com/photo-1579992357154-faf4bde95b3d?q=80&w=400&auto=format&fit=crop' },
         { id: 'espresso', name: 'Espresso', nameAr: 'إسبريسو', price: 15, image: 'https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?q=80&w=400&auto=format&fit=crop' },
         { id: 'tiramisu', name: 'Tiramisu', nameAr: 'تيراميسو', price: 25, image: 'https://images.unsplash.com/photo-1571115177098-24ec42ed204d?q=80&w=400&auto=format&fit=crop' }
@@ -419,31 +419,44 @@
 
           var thumb = document.createElement('div');
           thumb.className = 'item-thumb';
+          if (item.id === 'v60') {
+            thumb.appendChild(document.createComment(' الصورة الحقيقية لم تُضف بعد — ضع الملف في images/v60.jpg '));
+          }
           var img = document.createElement('img');
           img.src = item.image;
-          img.alt = item.nameAr;
+          img.alt = item.id === 'v60' ? 'V60' : item.nameAr;
           img.width = 72;
           img.height = 72;
           img.loading = 'lazy';
-          img.addEventListener('error', function () { img.style.display = 'none'; });
+          img.onerror = function () { this.style.visibility = 'hidden'; };
           thumb.appendChild(img);
 
           var copy = document.createElement('div');
           copy.className = 'item-copy';
 
           var nameAr = document.createElement('h3');
-          nameAr.textContent = item.nameAr;
-
-          var nameEn = document.createElement('span');
-          nameEn.className = 'item-latin';
-          nameEn.dir = 'ltr';
-          nameEn.textContent = item.name;
+          if (item.id === 'v60') {
+            var v60 = document.createElement('span');
+            v60.dir = 'ltr';
+            v60.textContent = 'V60';
+            nameAr.appendChild(v60);
+          } else {
+            nameAr.textContent = item.nameAr;
+          }
 
           var price = document.createElement('p');
           price.className = 'item-price';
           price.appendChild(priceNode(item.price));
 
-          copy.append(nameAr, nameEn, price);
+          if (item.id === 'v60') {
+            copy.append(nameAr, price);
+          } else {
+            var nameEn = document.createElement('span');
+            nameEn.className = 'item-latin';
+            nameEn.dir = 'ltr';
+            nameEn.textContent = item.name;
+            copy.append(nameAr, nameEn, price);
+          }
 
           var action = document.createElement('div');
           action.className = 'item-action';
