@@ -1,79 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Panorama — specialty coffee. A wider view of coffee.">
-  <title>Panorama — Specialty Coffee</title>
+  <meta name="description" content="عين بانوراما — مقهى حيّ في المنصورة، الرياض. شاي سموار وشاي حضرمي وقهوة تركية حتى الواحدة والنصف صباحاً.">
+  <title>عين بانوراما</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500&family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            cream: '#F6F4EE',
-            espresso: '#2C1E16',
-          },
-          fontFamily: {
-            serif: ['"Playfair Display"', 'Georgia', '"Times New Roman"', 'serif'],
-            sans: ['Inter', 'system-ui', '-apple-system', 'Segoe UI', 'sans-serif'],
-            arabic: ['Cairo', 'system-ui', 'sans-serif'],
-          },
-        },
-      },
-    };
-  </script>
-  <style>
-    .hero-inner{
-      display:grid;
-      grid-template-columns:minmax(0,1fr) clamp(250px,29vw,430px);
-      column-gap:clamp(26px,5vw,72px);
-      align-items:center;
-    }
-    .hero-copy{ grid-column:1; }
-    .hero-art{ grid-column:2; margin:0; width:100%; }
-    .hero-art img{ display:block; width:100%; height:auto; }
-    .hero-inner > hr{ grid-column:1 / -1; }
-
-    @media (max-width:900px){
-      .hero-inner{ grid-template-columns:1fr; }
-      .hero-copy,.hero-art{ grid-column:1; }
-      .hero-art{ width:min(320px,78%); margin-top:28px; }
-    }
-  </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=IBM+Plex+Sans:wght@400;500;600&family=Tajawal:wght@300;400;500;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-cream text-espresso antialiased">
+<body>
 
-  <header class="flex items-center justify-between gap-6 px-8 sm:px-12 md:px-16 lg:px-24 xl:px-[8%] pt-8">
-    <a href="index.html" class="font-sans text-[13px] font-medium uppercase tracking-[0.42em]">Panorama</a>
-    <a href="menu.html" class="font-sans text-[11px] font-medium uppercase tracking-[0.22em] text-espresso/70 hover:text-espresso transition-colors">Menu</a>
+  <header class="site-header">
+    <a class="wordmark" href="index.html">عين بانوراما</a>
+    <nav class="site-nav" aria-label="التنقل">
+      <a href="menu.html">القائمة</a>
+      <a href="#atmosphere">الأجواء</a>
+      <a href="#visit">الزيارة</a>
+      <span class="chip">مفتوح الآن</span>
+    </nav>
   </header>
 
-  <section class="min-h-screen flex flex-col justify-center px-8 sm:px-12 md:px-16 lg:px-24 xl:px-[8%] py-24 md:py-32 lg:py-36">
-    <div class="hero-inner mx-auto w-full max-w-[1320px]">
+  <main></main>
 
-      <div class="hero-copy">
-        <p class="font-sans text-[11px] font-medium uppercase tracking-[0.32em] text-espresso/70">
-          Specialty Coffee - Est. MMXIX
-          <span class="font-arabic inline-block align-middle normal-case tracking-normal text-[13px] ltr:ml-3" dir="rtl" lang="ar">قهوة مختصة</span>
-        </p>
-
-        <h1 class="font-serif font-normal text-[2.75rem] sm:text-6xl md:text-7xl xl:text-[5.75rem] leading-[1.08] tracking-[-0.015em] mt-10 md:mt-14 lg:mt-16 max-w-[14ch]">
-          A wider view of <em class="italic font-normal">coffee</em>.
-        </h1>
-      </div>
-
-      <figure class="hero-art">
-        <img src="pour.svg" alt="A cup of coffee with rising steam">
-      </figure>
-
-      <hr class="mt-20 md:mt-28 lg:mt-32 border-0 h-px w-full bg-espresso/20">
-
-    </div>
-  </section>
+  <footer class="site-footer">
+    <a class="wordmark" href="index.html">عين بانوراما</a>
+    <p class="footer-note">مقهى حيّ في المنصورة، مفتوح حتى الواحدة والنصف صباحاً.</p>
+    <nav class="footer-nav" aria-label="روابط التذييل">
+      <a href="menu.html">القائمة</a>
+      <a href="#atmosphere">الأجواء</a>
+      <a href="#visit">الزيارة</a>
+    </nav>
+  </footer>
 
 </body>
 </html>
