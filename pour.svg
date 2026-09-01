@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 170">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="40 0 142 164" role="img" aria-label="A glass of tea with steam">
   <style>
     .ln,.sh,.solid{
       stroke:#2C1E16;
@@ -14,25 +14,30 @@
     @media (prefers-reduced-motion:reduce){.steam{animation:none}}
   </style>
 
-  <path class="ln" d="M0 152 H200"/>
-  <path class="ln" d="M6 160 h10 M24 160 h10 M42 160 h10 M60 160 h10 M78 160 h10 M96 160 h10 M114 160 h10 M132 160 h10 M150 160 h10 M168 160 h10 M186 160 h10"/>
+  <path class="ln" d="M40 150 H182"/>
+  <path class="ln" d="M44 158 h8 M58 158 h8 M72 158 h8 M86 158 h8 M100 158 h8 M114 158 h8 M128 158 h8 M142 158 h8 M156 158 h8 M170 158 h8"/>
 
-  <ellipse class="sh" cx="100" cy="138" rx="76" ry="11"/>
-  <ellipse class="ln" cx="100" cy="136" rx="46" ry="5"/>
-  <path class="ln" d="M36 138 h8 M52 138 h8 M68 138 h8 M84 138 h8 M100 138 h8 M116 138 h8 M132 138 h8 M148 138 h8 M164 138 h8"/>
+  <ellipse class="sh" cx="100" cy="144" rx="38" ry="7"/>
+  <path class="ln" d="M70 144 h6 M80 144 h6 M90 144 h6 M100 144 h6 M110 144 h6 M120 144 h6 M130 144 h6"/>
 
-  <path class="sh" d="M148 86 C176 82 188 90 188 106 C188 124 174 132 140 130 L140 122 C166 124 176 118 176 106 C176 94 168 92 148 94 Z"/>
+  <path class="sh" d="M46 146 C42 138 48 126 60 134 C54 140 50 146 46 146 Z"/>
+  <path class="ln" d="M48 144 C52 138 56 134 58 134"/>
+  <path class="sh" d="M58 148 C56 138 64 128 74 138 C68 144 62 148 58 148 Z"/>
+  <path class="ln" d="M60 146 C64 140 68 136 72 138"/>
 
-  <path class="sh" d="M50 76 L58 124 Q58 130 64 130 L136 130 Q142 130 142 124 L150 76 Z"/>
-  <path class="ln" d="M63 88 V126 M71 88 V126 M79 88 V126 M87 88 V126 M95 88 V126 M105 88 V126 M113 88 V126 M121 88 V126 M129 88 V126 M137 88 V126"/>
-  <rect class="solid" x="88" y="100" width="24" height="13"/>
+  <path class="ln" d="M114 146 L164 138"/>
+  <path class="ln" d="M114 150 L164 142"/>
+  <path class="sh" d="M160 134 C172 130 178 142 166 148 C154 152 150 138 160 134 Z"/>
 
-  <ellipse class="sh" cx="100" cy="74" rx="50" ry="10"/>
-  <ellipse class="solid" cx="100" cy="75" rx="41" ry="6.5"/>
+  <path class="sh" d="M72 48 C70 48 68 52 68 56 C68 80 80 100 90 114 C94 120 92 124 92 128 C92 134 88 140 88 144 C88 149 93 152 100 152 C107 152 112 149 112 144 C112 140 108 134 108 128 C108 124 106 120 110 114 C120 100 132 80 132 56 C132 52 130 48 128 48 Z"/>
+
+  <path class="solid" d="M74 54 C74 78 84 98 93 114 C95 118 94 120 94 122 L106 122 C106 120 105 118 107 114 C116 98 126 78 126 54 Z"/>
+
+  <path class="ln" d="M80 56 C80 80 87 100 95 120 C95 128 92 136 92 142 M86 56 C86 80 91 100 96 120 C96 128 95 136 95 142 M92 56 C92 80 95 100 98 120 C98 128 97 136 97 142 M97 56 C97 80 98 100 99 120 C99 128 99 136 99 142 M103 56 C103 80 102 100 101 120 C101 128 101 136 101 142 M108 56 C108 80 105 100 102 120 C102 128 103 136 103 142 M114 56 C114 80 109 100 104 120 C104 128 105 136 105 142 M120 56 C120 80 113 100 105 120 C105 128 108 136 108 142"/>
 
   <g class="steam">
-    <path class="ln" d="M76 70 C64 58 78 48 66 36 C56 26 70 18 62 8"/>
-    <path class="ln" d="M100 68 C116 50 84 36 102 18 C112 8 90 4 100 0"/>
-    <path class="ln" d="M124 70 C136 58 122 46 134 36 C144 26 130 18 138 12"/>
+    <path class="ln" d="M86 46 C74 36 88 26 76 16 C68 8 80 4 74 0"/>
+    <path class="ln" d="M100 44 C116 28 84 16 102 6 C108 2 92 2 100 0"/>
+    <path class="ln" d="M114 46 C126 36 112 24 124 16 C132 8 120 4 126 2"/>
   </g>
 </svg>
