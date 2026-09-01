@@ -26,6 +26,24 @@
       },
     };
   </script>
+  <style>
+    .hero-inner{
+      display:grid;
+      grid-template-columns:minmax(0,1fr) clamp(250px,29vw,430px);
+      column-gap:clamp(26px,5vw,72px);
+      align-items:center;
+    }
+    .hero-copy{ grid-column:1; }
+    .hero-art{ grid-column:2; margin:0; width:100%; }
+    .hero-art img{ display:block; width:100%; height:auto; }
+    .hero-inner > hr{ grid-column:1 / -1; }
+
+    @media (max-width:900px){
+      .hero-inner{ grid-template-columns:1fr; }
+      .hero-copy,.hero-art{ grid-column:1; }
+      .hero-art{ width:min(320px,78%); margin-top:28px; }
+    }
+  </style>
 </head>
 <body class="bg-cream text-espresso antialiased">
 
@@ -35,30 +53,22 @@
   </header>
 
   <section class="min-h-screen flex flex-col justify-center px-8 sm:px-12 md:px-16 lg:px-24 xl:px-[8%] py-24 md:py-32 lg:py-36">
-    <div class="mx-auto w-full max-w-[1320px]">
+    <div class="hero-inner mx-auto w-full max-w-[1320px]">
 
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 xl:gap-24 items-center">
+      <div class="hero-copy">
+        <p class="font-sans text-[11px] font-medium uppercase tracking-[0.32em] text-espresso/70">
+          Specialty Coffee - Est. MMXIX
+          <span class="font-arabic inline-block align-middle normal-case tracking-normal text-[13px] ltr:ml-3" dir="rtl" lang="ar">قهوة مختصة</span>
+        </p>
 
-        <div class="flex flex-col justify-center lg:pr-8 xl:pr-16">
-          <p class="font-sans text-[11px] font-medium uppercase tracking-[0.32em] text-espresso/70">
-            Specialty Coffee - Est. MMXIX
-            <span class="font-arabic inline-block align-middle normal-case tracking-normal text-[13px] ltr:ml-3" dir="rtl" lang="ar">قهوة مختصة</span>
-          </p>
-
-          <h1 class="font-serif font-normal text-[2.75rem] sm:text-6xl md:text-7xl xl:text-[5.75rem] leading-[1.08] tracking-[-0.015em] mt-10 md:mt-14 lg:mt-16 max-w-[14ch]">
-            A wider view of <em class="italic font-normal">coffee</em>.
-          </h1>
-        </div>
-
-        <div class="flex justify-center lg:justify-end">
-          <img
-            src="pour.svg"
-            alt="Vintage engraved illustration of a hand pouring V60 coffee"
-            class="w-full max-w-[420px] lg:max-w-[460px] h-auto object-contain"
-          >
-        </div>
-
+        <h1 class="font-serif font-normal text-[2.75rem] sm:text-6xl md:text-7xl xl:text-[5.75rem] leading-[1.08] tracking-[-0.015em] mt-10 md:mt-14 lg:mt-16 max-w-[14ch]">
+          A wider view of <em class="italic font-normal">coffee</em>.
+        </h1>
       </div>
+
+      <figure class="hero-art">
+        <img src="pour.svg" alt="A cup of coffee with rising steam">
+      </figure>
 
       <hr class="mt-20 md:mt-28 lg:mt-32 border-0 h-px w-full bg-espresso/20">
 
